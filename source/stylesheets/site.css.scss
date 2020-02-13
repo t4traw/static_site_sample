@@ -1,24 +1,26 @@
-body {
-  background-color: #fbc547;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
+@import "bulma.min.scss";
+
+.is-myhero {
+  background-image: url("/images/hero.png");
+  background-size: cover;
 }
 
-a {
-  color: rgba(#000, 0.7);
-
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
+.container {
+  &.is-spaced {
+    // MEMO 横marginを変更すると、レイアウトが崩れる
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 }
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+.nakami {
+  text-align: center;
+  margin: auto 1rem 4rem;
+  img {
+    width: 30%;
+  }
+  p {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
 }
