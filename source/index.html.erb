@@ -1,39 +1,28 @@
 <section class="hero is-success is-large is-myhero">
   <div class="hero-body">
     <div class="container">
-      <h1 class="title">SSS コーヒーショップ</h1>
-      <h2 class="subtitle">焙煎したてのコーヒー豆がうんたらかんたら</h2>
+      <h1 class="title"><%= data.site.title %></h1>
+      <h2 class="subtitle"><%= data.site.desc %></h2>
       <a href="/" class="button is-primary is-rounded is-inverted is-outlined is-large">お問い合わせ</a>
     </div>
   </div>
 </section>
 
 <div class="container is-spaced">
-  <div class="columns is-centered">
-    <div class="column">
+  <div class="columns is-multiline is-centered">
+
+    <% data.coffees.items.each do |foo| %>
+    <div class="column is-4">
       <div class="nakami">
         <%= image_tag "cup.svg" %>
-        <h2 class="title is-size-4">オリジナルカップあります</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, aut nemo! Blanditiis, nobis. Architecto aliquid similique fuga cumque, quis ipsam ipsum ad illum, numquam velit harum, laudantium voluptatibus incidunt deserunt!</p>
+        <h2 class="title is-size-4"><%= foo[:name] %></h2>
+        <p><%= foo[:body] %></p>
+        <p style="color: red; font-weight: bold;"><%= foo[:price] %></p>
         <a href="/" class="button">詳しくはこちら</a>
       </div>
     </div>
-    <div class="column">
-      <div class="nakami">
-        <%= image_tag "coffee.svg" %>
-        <h2 class="title is-size-4">挽きたての豆を真空パックで</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, aut nemo! Blanditiis, nobis. Architecto aliquid similique fuga cumque, quis ipsam ipsum ad illum, numquam velit harum, laudantium voluptatibus incidunt deserunt!</p>
-        <a href="/" class="button">詳しくはこちら</a>
-      </div>
-    </div>
-    <div class="column">
-      <div class="nakami">
-        <%= image_tag "takeout.svg" %>
-        <h2 class="title is-size-4">実店舗もあります</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, aut nemo! Blanditiis, nobis. Architecto aliquid similique fuga cumque, quis ipsam ipsum ad illum, numquam velit harum, laudantium voluptatibus incidunt deserunt!</p>
-        <a href="/" class="button">詳しくはこちら</a>
-      </div>
-    </div>
+    <% end %>
+
   </div>
 </div>
 

@@ -1,0 +1,25 @@
+items:
+  - name: ブルーマウンテン
+    body: たかいけど、おいしいコーヒー
+    price: 1500円
+  - name: キリマンジャロ
+    body: あたたくてもさめてもおいしいコーヒー
+    price: 700円
+  - name: ショコラ
+    body: のみやすくて美味しいコーヒー
+    price: 800円
+  - name: デカフェ
+    body: カフェインレスのコーヒー
+    price: 650円
+  - name: AAAコーヒー
+    body: AAAのコーヒー
+    price: 900円
+  - name: BBBコーヒー
+    body: BBBのコーヒー
+    price: 900円
+  - name: CCCコーヒー
+    body: CCCのコーヒー
+    price: 900円
+  - name: DDDコーヒー
+    body: DDDのコーヒー
+    price: 900円
